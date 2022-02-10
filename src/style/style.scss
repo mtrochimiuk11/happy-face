@@ -1,0 +1,30 @@
+@import "./reset";
+@import "./partials/variables";
+@import "./partials/navigation";
+@import "./partials/header";
+@import "./partials/partners";
+@import "./partials/about";
+@import "./partials/mission";
+@import "./partials/newsletter";
+@import "./partials/contact";
+@import "./partials/footer";
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  width: 100%;
+  color: $dark-gray;
+  background: $background;
+}
+.wrapper {
+  overflow: hidden;
+}
+
+.bkg {
+  position: relative;
+  z-index: -2;
+  background: linear-gradient(#eeeff1, white);
+}

@@ -1,0 +1,143 @@
+.newsletter {
+  background: $violet;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+  width: 100vw;
+  &__bkg {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    &-one {
+      position: absolute;
+      width: 182.93px;
+      height: 112.69px;
+      background: $red;
+      opacity: 0.4;
+      transform: rotate(17.05deg);
+      top: 148px;
+      left: -5px;
+      border-radius: 50%;
+      filter: blur(80px);
+    }
+    &-two {
+      position: absolute;
+      width: 247.63px;
+      height: 165.31px;
+      background: $red;
+      opacity: 0.4;
+      transform: rotate(25.37deg);
+      top: 42px;
+      right: -84px;
+      border-radius: 50%;
+      filter: blur(80px);
+    }
+  }
+  &__img {
+    position: relative;
+    z-index: 5;
+    width: 190px;
+    height: 150px;
+    margin: 48px 93px 32px;
+  }
+  &__text {
+    position: relative;
+    z-index: 5;
+  }
+  &__title {
+    color: white;
+    font: 700 32px/44px $small-header;
+    padding-left: 24px;
+    padding-bottom: 24px;
+  }
+  &__form {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 48px;
+    &__input {
+      width: 210px;
+      height: 48px;
+      padding: 0px;
+      border-radius: 5px 0px 0px 5px;
+      border: none;
+      padding-left: 16px;
+      &::placeholder {
+        font: 400 14px/22px $main-font;
+      }
+      &:focus {
+        outline: none;
+      }
+    }
+    &__btn {
+      width: 117px;
+      height: 48px;
+      padding: 0px;
+      border: none;
+      border-radius: 0px 5px 5px 0px;
+      background: $dark-gray;
+      color: white;
+      font: 600 14px/22px $main-font;
+    }
+  }
+}
+
+@media all and (min-width: 1200px) {
+  .newsletter {
+    margin: auto;
+    width: 1320px;
+    height: 292px;
+    border-radius: 15px;
+    flex-direction: row;
+    justify-content: center;
+
+    &__img {
+      width: 228px;
+      height: 180px;
+      margin-right: 145px;
+    }
+    &__text {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+    }
+    &__title {
+      font-size: 40px;
+      line-height: 54px;
+      padding-left: 0;
+      padding-top: 56px;
+    }
+    &__form {
+      padding-bottom: 56px;
+      &__input {
+        width: 246px;
+        &::placeholder {
+          font-size: 16px;
+          line-height: 26px;
+        }
+      }
+      &__btn {
+        width: 127px;
+        font-size: 16px;
+        line-height: 26px;
+      }
+    }
+    &__bkg {
+      &-one {
+        width: 368px;
+        height: 227px;
+        filter: blur(100px);
+        top: -2px;
+        left: 212px;
+      }
+      &-two {
+        width: 498px;
+        height: 332px;
+        filter: blur(100px);
+        top: -198px;
+        right: -414px;
+      }
+    }
+  }
+}

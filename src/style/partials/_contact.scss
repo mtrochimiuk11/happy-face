@@ -1,0 +1,95 @@
+.contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  &__title {
+    font: 700 40px/55px $small-header;
+    margin-top: 102px;
+    margin-bottom: 16px;
+  }
+  &__paragraph {
+    font: 400 14px/22px $main-font;
+    text-align: center;
+    margin-bottom: 24px;
+    color: $gray;
+  }
+  &__form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    &__mail {
+      width: 327px;
+      height: 48px;
+      background: $background;
+      border: none;
+      border-bottom: 1px solid $gray;
+      margin-bottom: 16px;
+      &::placeholder {
+        color: $gray;
+        padding-left: 16px;
+        font: 400 14px/28px $small-header;
+      }
+    }
+    &__message {
+      resize: none;
+      width: 327px;
+      height: 96px;
+      background: $background;
+      border: none;
+      border-bottom: 1px solid $gray;
+      margin-bottom: 24px;
+      &::placeholder {
+        color: $gray;
+        padding-left: 16px;
+        font: 400 14px/28px $small-header;
+      }
+    }
+    &__submit {
+      font: 600 16px/28px $small-header;
+      color: white;
+      background: $violet;
+      width: 123px;
+      height: 48px;
+      border: none;
+      border-radius: 5px;
+      margin-bottom: 120px;
+    }
+  }
+}
+
+@media all and (min-width: 1200px) {
+  .contact {
+    position: relative;
+    top: -146px;
+    &__title {
+      font-size: 64px;
+      line-height: 87px;
+      margin-top: 160px;
+      margin-bottom: 24px;
+    }
+    &__paragraph {
+      width: 366px;
+      font-size: 16px;
+      line-height: 26px;
+    }
+    &__form {
+      & > input,
+      textarea {
+        width: 440px;
+        padding-left: 16px;
+        &:focus {
+          outline: none;
+          border: 3px solid $violet;
+          border-radius: 5px;
+        }
+      }
+      &::placeholder {
+        font-size: 16px;
+        line-height: 26px;
+      }
+      &__submit {
+        margin-bottom: 49px;
+      }
+    }
+  }
+}

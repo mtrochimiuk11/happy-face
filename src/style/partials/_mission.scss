@@ -1,0 +1,122 @@
+.mission {
+  padding: 20px 24px 56px;
+  &__subtitle {
+    color: $gray;
+    font: 600 16px/22px $small-header;
+    margin-bottom: 0;
+  }
+  &__title {
+    color: $dark-gray;
+    font: 700 24px/33px $small-header;
+    margin-top: 16px;
+    margin-bottom: 32px;
+  }
+  &__items__item {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 32px;
+    &__icon {
+      margin-right: 24px;
+      border-radius: 8px;
+      &-cart,
+      &-delivery {
+        padding: 12px;
+        width: 24px;
+        height: 24px;
+        background: $light-gray;
+      }
+      &-offer,
+      &-shield {
+        padding: 15px;
+        width: 18px;
+        height: 18px;
+        background: $light-gray;
+      }
+    }
+    &__text {
+      &__title {
+        margin: 0px;
+        padding-bottom: 8px;
+        font: 600 16px/24px $main-font;
+      }
+      &__paragraph {
+        margin: 0px;
+        font: 400 14px/22px $main-font;
+      }
+    }
+  }
+  &__scroll {
+    position: relative;
+    top: -60px;
+  }
+}
+
+@media all and (min-width: 1200px) {
+  .mission {
+    max-width: 1320px;
+    margin: auto;
+    padding-bottom: 226px;
+    &__subtitle {
+      font-size: 18px;
+      line-height: 24px;
+    }
+    &__title {
+      font-size: 32px;
+      line-height: 44px;
+      margin-bottom: 48px;
+    }
+    &__items {
+      display: flex;
+      flex-wrap: wrap;
+      &__item {
+        max-width: 660px;
+        &-delivery {
+          order: 2;
+        }
+        &-offer {
+          order: 3;
+        }
+        &-shield {
+          order: 4;
+        }
+        &__icon {
+          margin-right: 40px;
+          &-cart {
+            width: 28px;
+            height: 28px;
+            padding: 22px;
+          }
+          &-delivery {
+            width: 32px;
+            height: 32px;
+            padding: 20px;
+          }
+          &-offer {
+            width: 24px;
+            height: 24px;
+            padding: 24px;
+          }
+          &-shield {
+            width: 24px;
+            height: 24px;
+            padding: 24px;
+          }
+        }
+        &__text {
+          margin-right: 70px;
+          &__title {
+            font-size: 18px;
+            line-height: 28px;
+          }
+          &__paragraph {
+            font-size: 16px;
+            line-height: 28px;
+          }
+        }
+      }
+    }
+    &__scroll {
+      top: -84px;
+    }
+  }
+}

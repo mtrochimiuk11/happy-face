@@ -1,0 +1,285 @@
+.hero {
+  overflow: hidden;
+  padding-top: 64px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  &__text {
+    padding-left: 20px;
+    &__title {
+      position: relative;
+      z-index: 10;
+      font: 500 40px/40px $main-header;
+      margin-top: 56px;
+      margin-bottom: 16px;
+    }
+    &__paragraph {
+      position: relative;
+      z-index: 10;
+      padding-right: 110px;
+      font: 400 14px/24px $main-font;
+    }
+    &__bkg__color-one {
+      position: absolute;
+      width: 190px;
+      height: 300px;
+      left: -52px;
+      top: -4px;
+      background: $lavender;
+      filter: blur(55px);
+      transform: rotate(42.99deg);
+      border-radius: 50%;
+    }
+    &__bkg__color-two {
+      position: absolute;
+      width: 215.76px;
+      height: 188.48px;
+      left: -103.66px;
+      top: 200px;
+      background: $blue;
+      filter: blur(55px);
+      border-radius: 50%;
+      transform: rotate(2.54deg);
+      opacity: 0.6;
+    }
+  }
+  &__img {
+    margin-bottom: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    position: relative;
+    border: 1px solid white;
+    border-radius: 8px;
+    margin: 75px 56px;
+    width: 263px;
+    height: 175px;
+    &__photo {
+      height: 220px;
+    }
+    &__slogan-one {
+      position: absolute;
+      z-index: 5;
+      top: -17px;
+      right: -31px;
+      border: 1px solid white;
+      font: 600 10px/12px $small-header;
+      padding: 6px 7px;
+      background: rgba(255, 255, 255, 0.6);
+      border-radius: 4px;
+      backdrop-filter: blur(10px);
+    }
+    &__slogan-two {
+      position: absolute;
+      top: 68px;
+      left: -40px;
+      border: 1px solid white;
+      font: 600 10px/14px $small-header;
+      padding: 6px 11px;
+      background: rgba(255, 255, 255, 0.6);
+      border-radius: 4px;
+      backdrop-filter: blur(10px);
+    }
+    &__slogan-three {
+      position: absolute;
+      bottom: -15px;
+      right: 35px;
+      border: 1px solid white;
+      font: 600 10px/14px $small-header;
+      padding: 6px 22px;
+      background: rgba(255, 255, 255, 0.6);
+      border-radius: 4px;
+      backdrop-filter: blur(10px);
+    }
+    &__bkg {
+      z-index: -1;
+      &__color-one {
+        background: $red;
+        position: absolute;
+        bottom: 43px;
+        left: 58px;
+        width: 181.99px;
+        height: 143.38px;
+        opacity: 0.6;
+        border-radius: 50%;
+        filter: blur(45px);
+      }
+      &__color-two {
+        background: $light-orange;
+        position: absolute;
+        bottom: -80px;
+        left: -56px;
+        width: 182.44px;
+        height: 155.33px;
+        opacity: 0.6;
+        border-radius: 50%;
+        filter: blur(45px);
+      }
+      &__color-three {
+        background: $dark-orange;
+        position: absolute;
+        bottom: -21px;
+        left: 17px;
+        width: 183.36px;
+        height: 130.06px;
+        opacity: 0.6;
+        border-radius: 50%;
+        filter: blur(45px);
+      }
+      &__color-four {
+        background: $blue;
+        position: absolute;
+        bottom: -50px;
+        right: -57px;
+        width: 182.9px;
+        height: 165.44px;
+        opacity: 0.6;
+        border-radius: 50%;
+        filter: blur(45px);
+      }
+      &__color-five {
+        background: $violet;
+        position: absolute;
+        bottom: -61px;
+        right: -35px;
+        width: 203.58px;
+        height: 132.35px;
+        opacity: 0.6;
+        border-radius: 50%;
+        filter: blur(45px);
+      }
+    }
+  }
+}
+
+@media all and (min-width: 1200px) {
+  .hero {
+    padding-top: 80px;
+    flex-direction: row;
+    justify-content: center;
+    &__text {
+      &__title {
+        width: 580px;
+        font: 500 64px/77px $main-header;
+        margin-top: 245px;
+        margin-bottom: 24px;
+      }
+      &__paragraph {
+        width: 400px;
+        font: 400 16px/28px $main-font;
+        margin-bottom: 248px;
+      }
+      &__bkg {
+        &__color-one {
+          left: -52px;
+          top: -400px;
+          width: 564px;
+          height: 894.49px;
+          filter: blur(90px);
+        }
+        &__color-two {
+          left: -268.66px;
+          top: 236px;
+          width: 647.28px;
+          height: 565.44px;
+          filter: blur(90px);
+        }
+      }
+    }
+    &__img {
+      width: 660px;
+      height: 440px;
+      &__photo {
+        width: 330px;
+        height: 526px;
+      }
+      &__slogan {
+        text-align: center;
+        width: 280px;
+        font-size: 18px;
+        line-height: 25px;
+        padding: 24px 0;
+        border-radius: 15px;
+        &-one {
+          top: -37px;
+          right: -82px;
+        }
+        &-two {
+          top: 184px;
+          left: -83px;
+        }
+        &-three {
+          bottom: -37px;
+          right: 81px;
+        }
+      }
+      &__bkg {
+        &__color-one {
+          width: 396px;
+          height: 312px;
+          filter: blur(120px);
+          top: 16px;
+          left: 254px;
+        }
+        &__color-two {
+          width: 397px;
+          height: 338px;
+          filter: blur(130px);
+          left: 4px;
+          bottom: -140px;
+        }
+        &__color-three {
+          width: 399px;
+          height: 283px;
+          filter: blur(130px);
+          left: 183px;
+          bottom: -30px;
+        }
+        &__color-four {
+          width: 398px;
+          height: 360px;
+          filter: blur(130px);
+          right: -159px;
+          bottom: -60px;
+        }
+        &__color-five {
+          width: 443px;
+          height: 288px;
+          filter: blur(130px);
+          right: -102px;
+          bottom: -90px;
+        }
+      }
+    }
+  }
+
+  @-moz-document url-prefix() {
+    .hero {
+      &__text__bkg {
+        &__color-one {
+          filter: blur(300px);
+        }
+        &__color-two {
+          filter: blur(300px);
+        }
+      }
+      &__img__bkg {
+        &__color-one {
+          filter: blur(300px);
+        }
+        &__color-two {
+          filter: blur(250px);
+        }
+        &__color-three {
+          filter: blur(250px);
+        }
+        &__color-four {
+          filter: blur(200px);
+        }
+        &__color-five {
+          filter: blur(250px);
+        }
+      }
+    }
+  }
+}
