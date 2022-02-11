@@ -217,7 +217,7 @@ nav {
   border-radius: 50%;
   opacity: 0.4;
   transform: rotate(25.37deg);
-  filter: blur(300px);
+  filter: blur(100px);
 }
 .navbar__list__mobile__bkg__colore-two {
   z-index: -5;
@@ -230,7 +230,7 @@ nav {
   border-radius: 50%;
   opacity: 0.4;
   transform: rotate(17.05deg);
-  filter: blur(300px);
+  filter: blur(100px);
 }
 .navbar__list__mobile__bkg__img {
   position: absolute;
@@ -262,6 +262,12 @@ nav {
   margin-left: 24px;
 }
 
+@-moz-document url-prefix() {
+  .navbar__list__mobile__bkg__colore-two,
+.navbar__list__mobile__bkg__colore-one {
+    filter: blur(300px);
+  }
+}
 @media all and (min-width: 1200px) {
   .nav-mobile {
     width: 1320px;
@@ -279,6 +285,9 @@ nav {
     display: flex;
     justify-content: space-around;
     align-items: center;
+  }
+  .navbar__list__mobile {
+    display: none;
   }
   .navbar__list__item {
     transition: all 0.5s;
